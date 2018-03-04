@@ -39,14 +39,14 @@ to the require section of your `composer.json` file.
     </thead>
     <tbody>
     <?php foreach ($persons as $person): ?>
-    <tr>
-        <td style="text-align: center"><?= $person->id; ?></td>
-        <td><?= $person->firstname; ?></td>
-        <td><?= $person->lastname; ?></td>
-        <td style="text-align: center"><?= Html::a(FA::icon('trash'), ['person/delete', 'id' => $person->id], ['data-method' => 'post']); ?></td>
-    </tr>
+        <tr>
+            <td style="text-align: center"><?= $person->id; ?></td>
+            <td><?= $person->firstname; ?></td>
+            <td><?= $person->lastname; ?></td>
+            <td style="text-align: center"><?= Html::a(FA::icon('trash'), ['person/delete', 'id' => $person->id], ['data-method' => 'post']); ?></td>
+        </tr>
     <?php endforeach; ?>
-</tbody>
+    </tbody>
 
-<?= \mbi\datatables\BootstrapDatatable::end(); ?>
+<?= \mbi\datatables\BootstrapDatatableWidget::end(); ?>
 ```

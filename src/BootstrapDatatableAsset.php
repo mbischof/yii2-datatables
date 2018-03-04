@@ -6,7 +6,7 @@ use yii\web\AssetBundle;
 
 class BootstrapDatatableAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/datatable/media';
+    public $sourcePath = '@bower/datatables/media';
 
     public $css = [
         'css/dataTables.bootstrap.min.css'
