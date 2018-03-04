@@ -1,0 +1,23 @@
+{
+  "name": "mbischof/yii2-datatables",
+  "description": "Yii2 Extension for DataTables jQuery plug-in",
+  "type": "yii2-extension",
+  "homepage": "https://github.com/mbischof/yii2-datatables",
+  "keywords": ["yii2", "widget", "jquery", "datatables"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marko Bischof",
+      "email": "marko.bischof@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "~2.0",
+    "bower-asset/datatables": "~1.10.16"
+  },
+  "autoload": {
+    "psr-4": {"mbi\\datatables\\": "src/"}
+  }
+}
